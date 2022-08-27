@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+body {
+    color: #51527c;
+    background: linear-gradient(to bottom, #A5C9CA -1%, #2C3333 135%);
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 650px;
+    margin: 0 auto;
+    width: max-content;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+input {
+    writing-mode: horizontal-tb !important;
+    font-style: unset;
+    font-variant-ligatures: unset;
+    font-variant-caps: unset;
+    font-variant-numeric: unset;
+    font-variant-east-asian: unset;
+    font-weight: unset;
+    font-stretch: unset;
+    font-size: unset;
+    font-family: unset;
+    text-rendering: auto;
+    color: fieldtext;
+    height: 1.5em;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-radius: 10px;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h2 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+.widget {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #BBBFCA;
+    display: flex;
+    height: 300px;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+    cursor: pointer;
+    border-top-left-radius: 999px;
+    border-top-right-radius: 999px;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
+
+.weatherLocation {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    border-top: groove;
+    border-bottom-left-radius: 99px;
+    border-top-right-radius: 99px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 2rem;
+    background-color: lightgray;
+}
+
+.weatherLocation button {
+    background: rgb(68 112 207);
+    color: #e1f7ff;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 2.2em;
+}
+
+.weatherLocation input:focus {
+    outline: 0 none;
+}
+
+.widget .weatherIcon {
+    flex: 1 100%;
+    height: 60%;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0.12px;
+    border-top-right-radius: 91px;
+    background: #ffffff;
+    font-family: weathericons;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 100px;
+}
+
+.widget .weatherIcon i {
+    padding-top: 30px;
+}
+
+.widget .weatherInfo {
+    flex: 0 0 70%;
+    height: 40%;
+    background: #BBBFCA;
+    border-bottom-left-radius: 91px;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.widget .weatherInfo .temperature {
+    flex: 0 0 40%;
+    width: 100%;
+    font-size: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.widget .weatherInfo .description {
+    flex: 0 60%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.widget .weatherInfo .description .weatherCondition {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.widget .weatherInfo .description .place {
+    font-size: 15px;
+}
+
+.widget .date {
+    flex: 0 0 30%;
+    height: 40%;
+    font-style: italic;
+    background: #BBBFCA;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+p {
+    position: fixed;
+    bottom: 0%;
+    right: 2%;
+}
+
+p a {
+    text-decoration: none;
+    color: #E4D6A7;
+    font-size: 10px;
+}
